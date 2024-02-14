@@ -1,7 +1,7 @@
 <?php get_header();
 ?>
 <div class="single-page">
-    <h1>Page</h1>
+
     <?php
     while (have_posts()) {
         the_post(); ?>

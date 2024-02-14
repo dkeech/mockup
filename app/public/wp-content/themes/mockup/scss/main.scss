@@ -1,7 +1,5 @@
-@import "./custom";
-@import "bootstrap/bootstrap";
 
-// Define variables for repeated values
+
 $font-family-default: Helvetica, sans-serif;
 $background-color-dark: #0e1b50;
 $white-color: white;
@@ -9,23 +7,36 @@ $main-padding: 50px;
 $blue: #0e1b50;
 $lightblue: #009AFB;
 $purple: #1A0DAB;
+$stagger-time: .05s;
 
-// Use the variables throughout the SCSS
 html, body {
   margin: 0;
   font-family: $font-family-default;
 }
-
+.header-logo {
+  @media(max-width: 769px){
+    display: none;
+  }
+}
+.small-header-logo {
+  display: none; 
+  @media(max-width: 768px){
+    display: block;
+  }
+}
 .footer {
   background-color: $blue;
   color: white;
 }
 
 .navbar {
-  padding: 32.5px $main-padding;
+  padding: 32.5px $main-padding!important;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $blue;
+  height: 125px;
+  z-index: 20;
 }
 
 .footer {
@@ -40,10 +51,7 @@ html, body {
 .single-page {
   padding: $main-padding 70px; 
 }
-.card-row {
-  display: flex; 
-  flex-direction: row;
-}
+
 #menu-main-nav {
   display: flex;
   list-style-type: none;
@@ -53,7 +61,10 @@ html, body {
   > li {
     margin-left: 50px;
     padding-top: 10px;
-    position: relative; 
+    position: relative;
+    @media(max-width: 1120px){
+      margin-left: 20px;
+    } 
 
     &:hover > ul {
       display: block;
@@ -105,6 +116,9 @@ html, body {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
+  @media(max-width: 980px){
+    display: none;
+  }
 
   .menu-main-nav-container {
     display: flex; 
@@ -113,10 +127,17 @@ html, body {
   a {
     text-decoration: none;
     color: white;
+    &:hover {
+      color: #ededed;
+      text-decoration: none;
+    }
   }
+
 }
 .business-name {
-  color: $lightblue; 
+  color: $lightblue;
+  font-weight: bold;
+  margin-bottom: 12px; 
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -129,9 +150,11 @@ h5 {
 }
 .card-row {
   display: flex; 
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;;
+  justify-content: center;
+  padding-bottom: 300px;
   .card {
     border: 0px;
     border-radius: 0;
@@ -145,6 +168,9 @@ h5 {
   .card-body {
     border: 10px solid $lightblue;
     border-top: 0px;
+    p:not(.business-name) {
+      color: #707070
+    }
     p.card-text:last-of-type {
       padding-bottom: 0;
       margin-bottom: 0;
@@ -156,7 +182,106 @@ h5 {
   color: $purple;
 }
 button {
-  padding: 10px 36px;
+  padding: 10px 44px;
   color: white;
   background-color: $lightblue;
+  border: none;
+  border-radius: 5px!important;
 }
+.footer {
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input { 
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 270px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+}
+/* Hamburger menu */
+.hamburger-menu {
+  display: block;
+  z-index: 11;
+@media(min-width: 980px){
+  display: none;
+}
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  z-index: 13;
+  position: absolute;
+  right: 0;
+  background-color: $blue;
+  width: 240px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  @media(min-width: 980px){ display: none!important;}
+  .sub-menu  {
+    li a{
+    padding-left: 30px;
+  }}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+
+        &:hover {
+          background-color: $lightblue;
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu-breakout {
+  position: relative;
+  z-index: 12;
+
+}
+
+.cpt-page {
+  .single-page {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.cpt-image {
+width: 100%;
+ margin-bottom: 50px;
+}
+.cpt-image {
+  background-size: cover;
+  height: 200px; 
+  width: 100%;
+}
+.business {
+  color: $lightblue;
+  text-transform: uppercase;
+}
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;align-items: center;
+}
+

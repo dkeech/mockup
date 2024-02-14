@@ -421,3 +421,13 @@ Stack trace:
 [14-Feb-2024 09:20:12 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [14-Feb-2024 09:41:45 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [14-Feb-2024 09:42:52 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Feb-2024 11:17:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 9
+[14-Feb-2024 11:17:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 9
+[14-Feb-2024 11:17:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 9
+[14-Feb-2024 11:17:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 9
+[14-Feb-2024 11:28:31 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 8
+[14-Feb-2024 11:28:31 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 8
+[14-Feb-2024 12:59:32 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\single-custom_post.php on line 21
+[14-Feb-2024 12:59:56 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\single-custom_post.php on line 7
+[14-Feb-2024 12:59:58 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\single-custom_post.php on line 7
+[14-Feb-2024 13:35:05 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\single-custom_post.php on line 21

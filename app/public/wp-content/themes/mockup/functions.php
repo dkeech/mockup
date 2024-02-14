@@ -2,15 +2,13 @@
 
 function mockup_files()
 {
-    wp_enqueue_style('mockup_styles', get_theme_file_uri('/css/main.min.css'));
+    wp_enqueue_style('mockup_styles', get_theme_file_uri('/css/main.min.css'), array(), rand(111, 9999), 'all');
     wp_enqueue_script('mockup_scripts', get_theme_file_uri('/js/minified/scripts.min.js'), array('jquery'), '1.0', true);
+    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', array(), null);
+    // I would not usually link to a cdn--I initially tried to make the nav bar with Bootstrap, but could not get it to work 
+    // with Native Wordpress memus, so I uninstalled it. Then I discovered that I had a few bootstrap classes still in use.
 }
-function theme_enqueue_bootstrap()
-{
-    wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css');
-    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/minified/bootstrap.bundle.min.js', array('jquery'), null, true);
-}
-add_action('wp_enqueue_scripts', 'theme_enqueue_bootstrap');
+
 
 
 function my_filter_head()
@@ -21,6 +19,7 @@ function mockup_features()
 {
     add_theme_support('title_tag');
     register_nav_menu('primary', 'Header Menu Location');
+    register_nav_menu('mobile', "Header Mobile Menu");
 }
 function add_menu_parent_class($items)
 {

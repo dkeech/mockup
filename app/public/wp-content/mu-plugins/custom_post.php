@@ -1,4 +1,6 @@
+
 <?php
+// Register cpt in mu-plugins so it will persist if the theme is changed
 function mockup_post_types()
 {
     register_post_type('custom_post', array(
