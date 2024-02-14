@@ -1,3 +1,122 @@
 [14-Feb-2024 01:22:32 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 6
 [14-Feb-2024 01:23:12 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 6
 [14-Feb-2024 01:23:15 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 6
+[14-Feb-2024 02:50:22 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php:35
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#7 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 35
+[14-Feb-2024 02:50:22 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php:35
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#7 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 35
+[14-Feb-2024 02:56:49 UTC] PHP Warning:  require_once(C:\Users\ddkee\Local Sites\mockup\app\public/wp-content/themes/mockup/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2
+[14-Feb-2024 02:56:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\ddkee\Local Sites\mockup\app\public/wp-content/themes/mockup/class-wp-bootstrap-navwalker.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php:2
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-settings.php(611): include()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-config.php(103): require_once('C:\\Users\\ddkee\\...')
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-load.php(50): require_once('C:\\Users\\ddkee\\...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(13): require_once('C:\\Users\\ddkee\\...')
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#5 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2
+[14-Feb-2024 02:57:16 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php:35
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#7 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 35
+[14-Feb-2024 02:57:17 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php:35
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#7 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 35
+[14-Feb-2024 03:36:59 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "mockup_files" not found or invalid function name in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(3052): do_action('wp_head')
+#7 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php(9): wp_head()
+#8 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once('C:\\Users\\ddkee\\...')
+#9 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#10 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\page.php(1): get_header()
+#12 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#13 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#14 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#15 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-hook.php on line 324
+[14-Feb-2024 04:08:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function walk() on string in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php:616
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 2, Object(stdClass))
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php(24): wp_nav_menu(Object(stdClass))
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once('C:\\Users\\ddkee\\...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#7 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#8 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#9 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php on line 616
+[14-Feb-2024 04:08:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function walk() on string in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php:616
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 2, Object(stdClass))
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php(24): wp_nav_menu(Object(stdClass))
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(790): require_once('C:\\Users\\ddkee\\...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template.php(725): load_template('C:\\Users\\ddkee\\...', true, Array)
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\index.php(1): get_header()
+#6 C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ddkee\\...')
+#7 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ddkee\\...')
+#8 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#9 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\nav-menu-template.php on line 616
+[14-Feb-2024 04:12:52 UTC] PHP Warning:  require_once(C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2
+[14-Feb-2024 04:12:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\class-wp-bootstrap-navwalker.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php:2
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-settings.php(611): include()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-config.php(103): require_once('C:\\Users\\ddkee\\...')
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-load.php(50): require_once('C:\\Users\\ddkee\\...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(13): require_once('C:\\Users\\ddkee\\...')
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#5 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2
+[14-Feb-2024 04:12:52 UTC] PHP Warning:  require_once(C:\Users\ddkee\Local Sites\mockup\app\public/wp-content/themes/mockup/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2
+[14-Feb-2024 04:12:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\ddkee\Local Sites\mockup\app\public/wp-content/themes/mockup/class-wp-bootstrap-navwalker.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php:2
+Stack trace:
+#0 C:\Users\ddkee\Local Sites\mockup\app\public\wp-settings.php(611): include()
+#1 C:\Users\ddkee\Local Sites\mockup\app\public\wp-config.php(103): require_once('C:\\Users\\ddkee\\...')
+#2 C:\Users\ddkee\Local Sites\mockup\app\public\wp-load.php(50): require_once('C:\\Users\\ddkee\\...')
+#3 C:\Users\ddkee\Local Sites\mockup\app\public\wp-blog-header.php(13): require_once('C:\\Users\\ddkee\\...')
+#4 C:\Users\ddkee\Local Sites\mockup\app\public\index.php(17): require('C:\\Users\\ddkee\\...')
+#5 {main}
+  thrown in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\functions.php on line 2

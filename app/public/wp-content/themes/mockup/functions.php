@@ -1,9 +1,21 @@
 <?php
+
 function mockup_files()
 {
-    wp_enqueue_script('mockup_scripts', get_theme_file_uri('/build/index.js'), NULL, 1.0, true);
-    wp_enqueue_style('mockup_styles', get_stylesheet_uri());
+    wp_enqueue_style('mockup_styles', get_theme_file_uri('/css/main.min.css'));
+    wp_enqueue_script('mockup_scripts', get_theme_file_uri('/js/minified/scripts.min.js'), array('jquery'), '1.0', true);
 }
+function theme_enqueue_bootstrap()
+{
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css');
+
+    // Enqueue Bootstrap Bundle JS (includes Popper)
+    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/minified/bootstrap.bundle.min.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_bootstrap');
+
+
 function my_filter_head()
 {
     remove_action('wp_head', '_admin_bar_bump_cb');
@@ -11,7 +23,7 @@ function my_filter_head()
 function mockup_features()
 {
     add_theme_support('title_tag');
-    register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    register_nav_menu('primary', 'Header Menu Location');
 }
 function add_menu_parent_class($items)
 {
