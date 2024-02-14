@@ -24,10 +24,7 @@ html, body {
     display: block;
   }
 }
-.footer {
-  background-color: $blue;
-  color: white;
-}
+
 
 .navbar {
   padding: 32.5px $main-padding!important;
@@ -39,14 +36,7 @@ html, body {
   z-index: 20;
 }
 
-.footer {
-  width: 100%;
-  padding: 44px $main-padding 44px $main-padding; 
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-}
+
 
 .single-page {
   padding: $main-padding 70px; 
@@ -79,9 +69,19 @@ html, body {
       }
     }
   }
-  
+  &>li:last-child {
+    font-size: 1rem;
+    background-color: $lightblue;
+    border-radius: 5px;
+    padding: 10px 36px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #008aeb;
+    }
+  }
+
     .sub-menu {
-      transform: translate(-50px, 40px);
+      transform: translate(-50px, 45px);
       padding: 20px 24px 13px 24px!important;
       display: none; 
       position: absolute;
@@ -97,14 +97,8 @@ html, body {
       padding-bottom: 20px;
     }
       }
-      &>li:last-child {
-        background-color: $lightblue;
-        border-radius: 5px;
-        padding: 10px 36px;
-        text-transform: uppercase;
-      }
-
 }
+
 .menu-parent-item > a:after {
 
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ffffff' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
@@ -169,7 +163,8 @@ h5 {
     border: 10px solid $lightblue;
     border-top: 0px;
     p:not(.business-name) {
-      color: #707070
+      color: #707070;
+      letter-spacing: 0;
     }
     p.card-text:last-of-type {
       padding-bottom: 0;
@@ -187,12 +182,22 @@ button {
   background-color: $lightblue;
   border: none;
   border-radius: 5px!important;
+  &:hover {
+    background-color: #008aeb;
+  }
 }
 .footer {
+  width: 100%;
+  padding: 44px $main-padding 44px $main-padding; 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: $blue;
+  color: white;
   height: 270px;
   display: flex;
   justify-content: center;
-  align-items: center;
   input { 
     padding: 8px;
     border-radius: 5px;
@@ -201,6 +206,7 @@ button {
   }
   h2 {
     font-size: 30px;
+    font-weight: bold;
     margin-bottom: 28px;
   }
 }
