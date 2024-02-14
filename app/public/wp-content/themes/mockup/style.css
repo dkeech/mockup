@@ -1,0 +1,17 @@
+/* 
+Theme Name: Mockup
+Author: Dan Keech
+Version: 1.0.0
+*/
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #0e1b50;
+  width: 100%;
+  height: 125px;
+  color: white;
+}

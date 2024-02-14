@@ -1,0 +1,15 @@
+{
+  "name": "mockup",
+  "version": "1.0.0",
+  "description": "Work product sample",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Keech",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.70.0"
+  }
+}
