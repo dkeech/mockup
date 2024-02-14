@@ -7,10 +7,7 @@ function mockup_files()
 }
 function theme_enqueue_bootstrap()
 {
-    // Enqueue Bootstrap CSS
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css');
-
-    // Enqueue Bootstrap Bundle JS (includes Popper)
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/minified/bootstrap.bundle.min.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_bootstrap');
@@ -40,8 +37,10 @@ function add_menu_parent_class($items)
     }
     return $items;
 }
+
 add_action('wp_enqueue_scripts', 'mockup_files');
 add_action('get_header', 'my_filter_head');
 add_action('after_setup_theme', 'mockup_features');
+
 
 add_filter('wp_nav_menu_objects', 'add_menu_parent_class');
