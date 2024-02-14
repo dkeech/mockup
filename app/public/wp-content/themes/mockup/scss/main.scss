@@ -6,6 +6,9 @@ $font-family-default: Helvetica, sans-serif;
 $background-color-dark: #0e1b50;
 $white-color: white;
 $main-padding: 50px;
+$blue: #0e1b50;
+$lightblue: #009AFB;
+$purple: #1A0DAB;
 
 // Use the variables throughout the SCSS
 html, body {
@@ -13,9 +16,9 @@ html, body {
   font-family: $font-family-default;
 }
 
-.header, .footer, .navbar {
-  background-color: $background-color-dark;
-  color: $white-color;
+.footer {
+  background-color: $blue;
+  color: white;
 }
 
 .navbar {
@@ -40,4 +43,120 @@ html, body {
 .card-row {
   display: flex; 
   flex-direction: row;
+}
+#menu-main-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  > li {
+    margin-left: 50px;
+    padding-top: 10px;
+    position: relative; 
+
+    &:hover > ul {
+      display: block;
+    }
+
+    ul {
+      li {
+        ul {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+    .sub-menu {
+      transform: translate(-50px, 40px);
+      padding: 20px 24px 13px 24px!important;
+      display: none; 
+      position: absolute;
+      list-style-type: none; 
+      background-color: $blue;
+      white-space: nowrap;
+      &.nav-show {
+      display: block;
+    }
+    li {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+      }
+      &>li:last-child {
+        background-color: $lightblue;
+        border-radius: 5px;
+        padding: 10px 36px;
+        text-transform: uppercase;
+      }
+
+}
+.menu-parent-item > a:after {
+
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ffffff' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 16px;
+  margin-left: 8px;
+}
+.rendered-navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+
+  .menu-main-nav-container {
+    display: flex; 
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.business-name {
+  color: $lightblue; 
+  font-size: 12px;
+  text-transform: uppercase;
+}
+h5 {
+  &.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+  }
+}
+.card-row {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;;
+  .card {
+    border: 0px;
+    border-radius: 0;
+    max-width: 400px!important;
+    min-width: 300px;
+    flex: 1;
+    img {
+      border-radius: 0;
+    }
+  }
+  .card-body {
+    border: 10px solid $lightblue;
+    border-top: 0px;
+    p.card-text:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+.purple-link {
+  text-decoration: none;
+  color: $purple;
+}
+button {
+  padding: 10px 36px;
+  color: white;
+  background-color: $lightblue;
 }

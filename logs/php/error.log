@@ -414,3 +414,10 @@ Stack trace:
 [14-Feb-2024 06:52:34 UTC] PHP Warning:  Array to string conversion in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php on line 113
 [14-Feb-2024 06:52:34 UTC] PHP Warning:  Array to string conversion in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php on line 99
 [14-Feb-2024 06:52:34 UTC] PHP Warning:  Array to string conversion in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php on line 113
+[14-Feb-2024 06:56:35 UTC] PHP Parse error:  syntax error, unexpected token "/" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 28
+[14-Feb-2024 06:57:01 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\ddkee\Local Sites\mockup\app\public\wp-content\themes\mockup\header.php on line 26
+[14-Feb-2024 08:11:51 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Feb-2024 08:15:44 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Feb-2024 09:20:12 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\ddkee\Local Sites\mockup\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Feb-2024 09:41:45 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Feb-2024 09:42:52 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
