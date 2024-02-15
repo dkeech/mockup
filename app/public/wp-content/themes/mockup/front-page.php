@@ -1,3 +1,4 @@
+<!-- template for front page -->
 <?php get_header();
 ?>
 <div class="single-page">
@@ -26,6 +27,8 @@
         }
 
         ?>
-    </div><?php
+    </div>
+</div>
+<?php
 
-            get_footer();
+get_footer();

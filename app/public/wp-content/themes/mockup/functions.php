@@ -1,4 +1,5 @@
 <?php
+// I created the "custom_post" custom post type in /mu-plugins instead of functions.php so it could survive a theme change
 
 function mockup_files()
 {
@@ -8,8 +9,6 @@ function mockup_files()
     // I would not usually link to a cdn--I initially tried to make the nav bar with Bootstrap, but could not get it to work 
     // with Native Wordpress memus, so I uninstalled it. Then I discovered that I had a few bootstrap classes still in use.
 }
-
-
 
 function my_filter_head()
 {
@@ -22,6 +21,7 @@ function mockup_features()
     register_nav_menu('mobile', "Header Mobile Menu");
 }
 function add_menu_parent_class($items)
+// identify nav menu item that has children
 {
     $parents = array();
     foreach ($items as $item) {
@@ -40,6 +40,5 @@ function add_menu_parent_class($items)
 add_action('wp_enqueue_scripts', 'mockup_files');
 add_action('get_header', 'my_filter_head');
 add_action('after_setup_theme', 'mockup_features');
-
 
 add_filter('wp_nav_menu_objects', 'add_menu_parent_class');

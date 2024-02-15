@@ -1,3 +1,4 @@
+<!-- blog post template, not used on this site -->
 <?php get_header();
 ?>
 <div class="single-page">

@@ -1,3 +1,4 @@
+<!-- template for destination of custom post cards used on first page -->
 <?php get_header();
 ?>
 <div class="cpt-page">

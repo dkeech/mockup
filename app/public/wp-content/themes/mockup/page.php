@@ -1,3 +1,4 @@
+<!-- page template -->
 <?php get_header();
 ?>
 <div class="single-page">

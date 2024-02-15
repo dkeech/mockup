@@ -1,3 +1,4 @@
+<!-- default index page, not used on any pages on this site -->
 <?php get_header();
 ?>
 <div class="single-page">

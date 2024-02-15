@@ -1,4 +1,4 @@
-//I removed the event listener that wrapped these functions because it didn't always trigger.
+//I removed the event listener that wrapped these functions because it didn't always trigger the mobile menu
 
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -9,6 +9,7 @@ hamburger.addEventListener("click", () => {
     mobileMenu.style.display === "block" ? "none" : "block";
 });
 
+// make submenus in main nav menus
 document.querySelectorAll("#menu-main-nav li").forEach((li) => {
   let timeoutId;
 
